@@ -1,0 +1,94 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 6 key-value pairs.
+Below are 6 of them:
+ 1 key:                     Dog_04.jpg  label:                        dog
+ 2 key:                     Dog_03.jpg  label:                        dog
+ 3 key:                    Frog_01.jpg  label:                       frog
+ 4 key:                     Dog_02.jpg  label:                        dog
+ 5 key:                     Dog_01.jpg  label:                        dog
+ 6 key:                  Bucket_01.jpg  label:                     bucket
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog
+
+ NOT A MATCH:
+
+                    Dog_04.jpg: 
+Real:                        dog   Classifier:                   bull mastiff
+
+                    Dog_03.jpg: 
+Real:                        dog   Classifier:                          boxer
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                     rottweiler
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                     rottweiler
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier: ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+
+# Total Images 6 # Matches: 1 # NOT Matches: 5
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_04.jpg: 
+Real:                        dog   Classifier:                   bull mastiff  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_03.jpg: 
+Real:                        dog   Classifier:                          boxer  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier: ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 6 # Matches: 1 # NOT Matches: 5
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  6  N Dog Images:  4  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  6  N Dog Images:  4  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   6
+N Dog Images        :   4
+N Not-Dog Images    :   2
+ 
+pct_match :  16.7 %
+pct_correct_dogs :  100.0 %
+pct_correct_breed :  0.0 %
+pct_correct_notdogs :  100.0 %
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                   bull mastiff
+Real:                        dog   Classifier:                          boxer
+Real:                        dog   Classifier:                     rottweiler
+Real:                        dog   Classifier:                     rottweiler
+
+** Total Elapsed Runtime: 0:0:4
